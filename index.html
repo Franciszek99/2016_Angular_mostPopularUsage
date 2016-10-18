@@ -8,10 +8,11 @@
 
 	<body ng-controller="myController">
 		<div>
-			{{ message }}
-		</div>
-		<div>
-			{{ message }}
+			First Name: {{ employee.firstName }}
+			</br>
+			Last Name: {{ employee.lastName }}
+			</br>
+			Gender: {{ employee.gender }}
 		</div>
 	</body>
 	
@@ -20,7 +21,13 @@
 	var myApp = angular.module("myModule", []);
 	
 	myApp.controller("myController",  function($scope) {
-	    $scope.message = "AngularJS";
+		
+	var employee = {
+		firstName: "David",
+		lastName: "Hastiong",
+		gender: "Male"
+	};
+	    $scope.employee = employee
 	});
 	
 </script>
