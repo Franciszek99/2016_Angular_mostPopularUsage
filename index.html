@@ -8,7 +8,17 @@
 
 	<body ng-controller="myController">
 		<div>
-			<img src="2000px-Flag_of_Poland_(normative).svg.png" style="heigh:100px; width:200px" />
+			<div>
+				Name: {{ country.name }}
+			</div>
+			<div>
+				Capital: {{ country.capital }}
+			</div>
+			<div>
+			<img src="{{country.flag}}"
+			alt= "{{country.name + ' Flag '}}"
+			style="heigh:100px; width:200px" />
+			</div>
 		</div>
 	</body>
 
