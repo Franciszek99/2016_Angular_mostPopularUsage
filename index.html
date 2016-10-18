@@ -2,7 +2,8 @@
 <html ng-app="myModule">
 	<head>
 		<meta charset="utf-8">
-		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body ng-controller="myController">
@@ -16,20 +17,6 @@
 	</body>
 	
 	
-<script>
-	var myApp = angular.module("myModule", []);
-	
-	myApp.controller("myController",  function($scope) {
-		
-	var employee = {
-		firstName: "David",
-		lastName: "Hastiong",
-		gender: "Male"
-	};
-	    $scope.employee = employee
-	});
-	
-</script>
 
 
 	
