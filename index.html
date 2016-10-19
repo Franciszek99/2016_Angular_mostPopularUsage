@@ -9,24 +9,19 @@
 
 	<body ng-app="myModule">
 		<div ng-controller="myController">
-			Rows to display : <input type="number" step="1" min="0" max="5" ng-model="rowLimit" />
-			<br><br>
-			
 			<table>
 				<thead>
 					<th>Name</th>
 					<th>Date of Birth</th>
 					<th>Gender</th>
-					<th>Salary (number)</th>
-					<th>Salary (currency)</th>
+					<th>Salary</th>
 				</thead>
 				<thbody>
-					<tr ng-repeat="employee in employees | limitTo:rowLimit">
-						<td>{{employee.name | uppercase}}</td>
+					<tr ng-repeat="employee in employees | orderBy: 'name' : true">
+						<td>{{employee.name}}</td>
 						<td>{{employee.dateOfBirth | date:"dd/MM/yyyy"}}</td>
-						<td>{{employee.gender | lowercase}}</td>
-						<td>{{employee.salary | number}}</td>
-						<td>{{employee.salary | currency:"PLN":1}}</td>
+						<td>{{employee.gender}}</td>
+						<td>{{employee.salary}}</td>
 					</tr>
 				</thbody>
 			</table>
