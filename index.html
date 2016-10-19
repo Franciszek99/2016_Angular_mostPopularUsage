@@ -9,15 +9,9 @@
 	<body ng-controller="myController">
 		<div>
 			<div>
-				Name: {{ country.name }}
-			</div>
-			<div>
-				Capital: {{ country.capital }}
-			</div>
-			<div>
-			<img ng-src="{{country.flag}}"
-			alt= "{{country.name + ' Flag '}}"
-			style="heigh:100px; width:200px" />
+				<input type="text" ng-model="message" />
+				</br>
+			{{message}}
 			</div>
 		</div>
 	</body>
