@@ -21,7 +21,7 @@
 					<th>Salary (currency)</th>
 				</thead>
 				<thbody>
-					<tr ng-repeat="employee in employees">
+					<tr ng-repeat="employee in employees | limitTo:rowLimit">
 						<td>{{employee.name | uppercase}}</td>
 						<td>{{employee.dateOfBirth | date:"dd/MM/yyyy"}}</td>
 						<td>{{employee.gender | lowercase}}</td>
