@@ -11,7 +11,9 @@
 		<div ng-controller="myController">
 			<table>
 				<thead>
-					<th>Name</th>
+					<th ng-click="sortData('name')">
+						Name <div ng-class="getSortClass('name')"></div>
+					</th>
 					<th>Date of Birth</th>
 					<th>Gender</th>
 					<th>Salary</th>
