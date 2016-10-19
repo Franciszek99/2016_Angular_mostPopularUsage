@@ -9,6 +9,8 @@
 
 	<body ng-app="myModule">
 		<div ng-controller="myController">
+			Search : <input type="text" placeholder="Search employess" ng-model="searchText.city"/>
+			<br><br>
 			<table>
 				<thead>
 					<th>Name</th>
@@ -17,7 +19,7 @@
 					<th>City</th>
 				</thead>
 				<thbody>
-					<tr ng-repeat="employee in employees">
+					<tr ng-repeat="employee in employees | filter:searchText">
 						<td>{{employee.name}}</td>
 						<td>{{employee.gender}}</td>
 						<td>{{employee.salary}}</td>
