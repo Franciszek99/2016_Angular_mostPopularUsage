@@ -1,6 +1,12 @@
 	var myApp = angular
 					.module("myModule", [])
 					.controller("myController",  function($scope) {
-						$scope.message= "hello angular"				
+						var employee = {
+							firstName: "Ben",
+							lastName: "Hasting",
+							gender: "Male"
+						};
+						
+						$scope.employee=employee;
 	});
 	
