@@ -10,10 +10,10 @@
 		<div ng-controller="myController">
 			<ul>
 				<li ng-repeat="country in countries">
-					{{country.name}}
+					{{country.Name}} = Index = {{$index}}
 					<ul>
 						<li ng-repeat="city in country.cities">
-							{{city.name}}
+							{{city.name}} = Index = {{$index}}
 						</li>
 					</ul>
 					
