@@ -8,8 +8,13 @@
 	</head>
 	<body ng-app="myModule">
 		<div ng-controller="myController">
-			<div ng-include="employeeView">
-			</div>
+			Select View:
+			<select ng-model="employeeView">
+				<option value="EmployeeTable.html">Table</option>
+				<option value="EmployeeList.html">List</option>
+			</select>
+			<br><br>
+			<div ng-include="employeeView"></div>
 		</div>
 	</body>
 </html>
