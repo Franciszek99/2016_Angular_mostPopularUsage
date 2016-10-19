@@ -23,7 +23,7 @@
 							if ($scope.sortColumn == column) {
 								return $scope.reverseSort ? 'arrow-down' : 'arrow-up'
 							}
-								return '';
+									return '';
 						}
 					});
 						
