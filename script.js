@@ -14,7 +14,7 @@
 						$scope.reverseSort = false;
 						
 						$scope.sortData = function(column) {
-							$scope.reverseSort = ($scope.sortColumn == column) ? !$scoper.reverseSort :false
+							$scope.reverseSort = ($scope.sortColumn == column) ? !$scope.reverseSort :false
 						}
 						
 						$scope.getSortClass = function(column){
