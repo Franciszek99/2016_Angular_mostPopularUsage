@@ -14,7 +14,7 @@
 							}
 							
 							$scope.incrementDislikes = function(technology) {
-								technology.likes++;
+								technology.dislikes++;
 							}
 	});
 	
