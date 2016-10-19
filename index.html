@@ -17,7 +17,7 @@
 					<th>Salary</th>
 				</thead>
 				<thbody>
-					<tr ng-repeat="employee in employees | orderBy: 'name' : true">
+					<tr ng-repeat="employee in employees | orderBy: '+name'">
 						<td>{{employee.name}}</td>
 						<td>{{employee.dateOfBirth | date:"dd/MM/yyyy"}}</td>
 						<td>{{employee.gender}}</td>
