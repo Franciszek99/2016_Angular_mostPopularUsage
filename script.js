@@ -10,5 +10,6 @@
 						];
 						
 						$scope.employees=employees;
+						$scope.rowLimit = 3;
 	});
 	
