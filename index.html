@@ -13,7 +13,7 @@
 					{{country.Name}} = Index = {{$index}}
 					<ul>
 						<li ng-repeat="city in country.cities">
-							{{city.name}} = Index = {{$index}}
+							{{city.name}} = Parent Index = {{$parent.$index}}, Index = {{$index}}
 						</li>
 					</ul>
 					
